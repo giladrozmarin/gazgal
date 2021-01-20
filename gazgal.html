@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><title></title>
+<body class="bg" data-js-loaded="true" style="">	
+<form class="form-warp" action ="http://localhost:3000/" method="POST" >
+   
+    <fieldset class="form-warp">
+   
+    <div class="logo"><img id="Image1" src="./logosgazgal.png"  style="border-width:0px;"></div>
+    <h3 class="for-text">לכבוד: <span id="CompanyName">סופרגז</span> </h3>
+    <h3 ><span id="CompanyName">סופרגז</span> </h3>
+    <div ><span id="comany-out">הספק היוצא</span></div>
+    <div class="first-text"><h3>הודעה על סיום הסכם אספקת הגז עם הספק היוצא והתקשרות (ומעבר) אל חברת גזגל בע"מ</h3></div>
+    <link href="./gazgal.css" rel="stylesheet"></head>
+    <div class="fields-warp">
+    <div class="seccond-text">
+        <span class="start">אנו הח"מ בעלי הדירות בבניין/נים שפרטיהם הינם: </span>
+        
+   
+    </div>
+    
+       </div>
+       <div class="fields-warp">
+        <div class="input-field required">
+            <input type="text" name="street" id="street" required=""> 
+            <label for="street">רחוב</label>
+        </div>
+        <div class="input-field required">
+                <input type="number" name="houseNumber" id="houseNumber" required=""> 
+                <label for="houseNumber">מס'</label>
+        </div>
+          
+        <div class="input-field required">
+                    <input type="text" name="city" id="city" required=""> 
+                    <label for="city">בעיר/יישוב</label>
+        </div>
+         </div>
+  
+    <div class="third-text">
+        <span>מודיעים לכם בזאת כי:</span>
+        <ul>
+            <li>החלטנו לסיים את ההתקשרות עימכם ולהתקשר עם  חברת גזגל בע"מ (להלן: "גזגל") לצורך אספקת גז מעתה ואילך.</li>
+            <li>אנו מייפים בזאת את כוחה של חברת  גזגל לבצע כל פעולה מטעמנו ועבורנו בכל הקשור לסיום אספקת הגז ולסיום ההתקשרות ביננו.</li>
+            <li>מאחר והפקדנו בידיכם פיקדון וברצוננו לסיים את ההתקשרות על כן הננו מורים לכם להעביר את סכום דמי הפיקדון שהופקד בתוספת מע"מ והפרשי הצמדה עפ"י חוק לחברת סונול גז. במסגרת האמור הינכם נדרשים להמציא לנו פירוט של סכום הפקדון הקיים אצלכם וכן את יתרת החוב הקיימת אצלכם בגין תצרוכת הגז וככל שבדעתכם לקזז מסכום הפקדון סכום כלשהוא נא המציאו פירוט הסכום.</li>
+            <li>אנו מייפים את כוחה של גזגל לבצע מול הספק היוצא את כל הפעולות הקשורות להתקשרות האמורה, לרבות הגשת תביעה משפטית במקרה הצורך.</li>
+        </ul>
+    </div>
+ 
+    <div class="fields-warp">
+        <div class="input-field required">
+            <input type="text" name="CustomerName" id="CustomerName" required="">
+            <label for="CustomerName">שם לקוח</label>
+        </div>
+        <div class="input-field required">
+            <input type="number" name="id" id="id" required="">
+            <label for="id">ת"ז</label>
+        </div>
+        <div class="input-field required">
+            <input type="number" name="apt" id="apt" required="">
+            <label for="apt">מספר דירה</label>
+        </div>
+        <div class="input-field required">
+            <input type="number" name="phone" id="phone" required="">
+            <label for="phone">מספר טלפון</label>
+        </div>
+        <div class="input-field not-required">
+            <input placeholder=" " type="email" name="email" id="emailAddress">
+            <label for="emailAddress">כתובת דוא"ל</label>
+        </div>
+        <div>
+            <div class="md-radio-label">סוג דייר:</div>
+            <div class="md-radio md-radio-inline">
+                <input id="renter" type="radio" name="type" value="1" checked="">
+                <label for="renter">שוכר</label>
+            </div>
+            <div class="md-radio md-radio-inline">
+                <input id="owner" type="radio" value="2" name="type">
+                <label for="owner">בעלים</label>
+            </div>
+        </div>
+        <div class="input-field" id="show-sig">
+            <span></span>
+            <label for="signature">חתימה</label>
+        </div>
+
+    </div>
+            
+            
+    <div id="signature-container" style="display: none;">
+        <div>חתימה:</div>
+        <canvas id="signature-pad" class="signature-pad" width="0" height="0" style="touch-action: none;"></canvas>
+        <button id="save">שמור</button>
+        <button id="cancel">בטל</button>
+        <button id="clear">מחק</button>
+    </div>
+    
+    <div style="margin: 10px; margin-top: 1px; margin-bottom: 1px">
+        <input type="submit" value="שלח">
+    </fieldset>
+</form>
+ 
+  
+</body></html>
